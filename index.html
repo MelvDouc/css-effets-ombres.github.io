@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style1.css">
+    <link rel="stylesheet" href="./style2.css">
+    <title>Ombres</title>
+</head>
+<body>
+
+    <h1>Ombres</h1>
+
+    <h2>text-shadow</h2>
+
+    <ul>
+        <li>h-shadow (requis)</li>
+        <li>v-shadow (requis)</li>
+        <li>blur-radius</li>
+        <li>color</li>
+    </ul>
+
+    <table id="tableau-texte">
+        <tr>
+            <td>normal</td>
+            <td>Lorem ipsum dolor sit amet.</td>
+        </tr>
+        <tr>
+            <td>text-shadow: 1px 1px red</td>
+            <td style="text-shadow: 1px 1px red">Lorem ipsum dolor sit amet.</td>
+        </tr>
+        <tr>
+            <td>text-shadow: 6px 0</td>
+            <td style="text-shadow: 6px 0 red">Lorem ipsum dolor sit amet.</td>
+        </tr>
+        <tr>
+            <td>text-shadow: 0 6px</td>
+            <td style="text-shadow: 0 6px red">Lorem ipsum dolor sit amet.</td>
+        </tr>
+        <tr>
+            <td>text-shadow: 1px 1px 6px</td>
+            <td style="text-shadow: 1px 1px 6px red">Lorem ipsum dolor sit amet.</td>
+        </tr>
+        <tr>
+            <td>text-shadow: -5px -7px 2px red</td>
+            <td style="text-shadow: -5px -7px 2px red">Lorem ipsum dolor sit amet.</td>
+        </tr>
+    </table>
+
+    <h2>box-shadow</h2>
+    
+    <ul>
+        <li>h-offset (requis)</li>
+        <li>v-offset (requis)</li>
+        <li>blur</li>
+        <li>spread</li>
+        <li>color</li>
+        <li>inset/outset</li>
+    </ul>
+
+    <table id="tableau-boite">
+        <tr>
+            <td>box-shadow: 10px 0px</td>
+            <td id="h-offset"><div class="boite-ombre">Lorem ipsum dolor sit amet.</div></td>
+        </tr>
+        <tr>
+            <td>box-shadow: 0px 10px</td>
+            <td id="v-offset"><div class="boite-ombre">Lorem ipsum dolor sit amet.</div></td>
+        </tr>
+        <tr>
+            <td>box-shadow: 5px 5px 10px</td>
+            <td id="blur"><div class="boite-ombre">Lorem ipsum dolor sit amet.</div></td>
+        </tr>
+        <tr>
+            <td>box-shadow: 5px 5px 0px 10px</td>
+            <td id="spread"><div class="boite-ombre">Lorem ipsum dolor sit amet.</div></td>
+        </tr>
+        <tr>
+            <td>box-shadow: inset 10px 10px</td>
+            <td id="inset"><div class="boite-ombre">Lorem ipsum dolor sit amet.</div></td>
+        </tr>
+        <tr>
+            <td>box-shadow: <span style="color: red">4px 4px red</span>, <span style="color: green">8px 8px green</span>, <span style="background-color: rgb(255, 255, 113)">12px 12px 10px yellow</span>, inset 2px 2px, <span style="color: rgb(221, 0, 221)">inset 4px 5px 0px 10px magenta</span></td>
+            <td id="ombres-multiples"><div class="boite-ombre">Lorem ipsum dolor sit amet.</div></td>
+        </tr>
+    </table>
+
+</body>
+</html>

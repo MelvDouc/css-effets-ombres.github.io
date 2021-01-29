@@ -1,0 +1,21 @@
+table, .boite-ombre {
+    border: 1px solid;
+}
+td:nth-child(even) {
+    font-size: xxx-large;
+}
+table td {
+    border: 1px solid #000;
+}
+.boite-ombre {
+    padding: 5px;
+}
+#tableau-texte td:nth-child(even) {padding: 10px}
+#tableau-boite td:nth-child(even) {padding: 30px}
+#tableau-boite td:nth-child(odd) {width: 33.33%}
+#h-offset > div {box-shadow: 10px 0px red;}
+#v-offset > div {box-shadow: 0px 10px red;}
+#blur > div {box-shadow: 5px 5px 10px red}
+#spread > div {box-shadow: 5px 5px 0px 10px red}
+#inset > div {box-shadow: inset 10px 10px red;}
+#ombres-multiples > div {box-shadow: 4px 4px red, 8px 8px green, 12px 12px 10px yellow, inset 2px 2px, inset 4px 5px 0px 10px magenta;}
